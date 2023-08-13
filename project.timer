@@ -1,0 +1,11 @@
+[Unit]
+Description=it will be executed every hour 
+
+[Timer]
+OnBootSec=10min
+OnUnitActiveSec=1h
+Unit=project.service
+
+[Install]
+WantedBy=multi-user.target
+
